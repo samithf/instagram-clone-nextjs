@@ -9,7 +9,7 @@ const Post = () => (
           />
         </div>
         <div className="post-user-nickname">
-          <span>Love and Happy</span>
+          <span>samith556</span>
         </div>
       </div>
     </header>
@@ -23,10 +23,35 @@ const Post = () => (
       </div>
     </div>
     <div className="post-caption">
-      <strong>AAA</strong> SSSS
+      <strong>
+        The design should be mobile-first, and on the desktop version the bottom
+        menu should instead be on top; with the labels
+      </strong>{' '}
+      SSSS
     </div>
 
     <style jsx>{`
+      .post {
+        // padding: 1rem;
+      }
+      .post-user {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 1rem;
+      }
+      .post-caption {
+        padding: 1rem;
+      }
+      .post-user-avatar > img {
+        border-radius: 50%;
+        height: 40px;
+      }
+      .post-user-nickname > span {
+        color: #f17367;
+        padding-left: 0.5rem;
+        font-weight: 500;
+      }
       .responsive {
         width: 100%;
         height: auto;

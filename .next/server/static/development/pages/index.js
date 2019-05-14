@@ -192,28 +192,28 @@ var _jsxFileName = "/home/samith/Documents/react-ws/my-instagram/components/Post
 
 var Post = function Post() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("article", {
-    className: "jsx-1428928937" + " " + "post",
+    className: "jsx-165176608" + " " + "post",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 2
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
-    className: "jsx-1428928937",
+    className: "jsx-165176608",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 3
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1428928937" + " " + "post-user",
+    className: "jsx-165176608" + " " + "post-user",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 4
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1428928937" + " " + "post-user-avatar",
+    className: "jsx-165176608" + " " + "post-user-avatar",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 5
@@ -222,35 +222,35 @@ var Post = function Post() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     src: "http://www.gravatar.com/avatar/77a87ca05717403d2813164fd079c4ba?s=200&r=pg",
     alt: "image",
-    className: "jsx-1428928937",
+    className: "jsx-165176608",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1428928937" + " " + "post-user-nickname",
+    className: "jsx-165176608" + " " + "post-user-nickname",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "jsx-1428928937",
+    className: "jsx-165176608",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, "Love and Happy")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1428928937" + " " + "post-image",
+  }, "samith556")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "jsx-165176608" + " " + "post-image",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1428928937" + " " + "post-image-bg",
+    className: "jsx-165176608" + " " + "post-image-bg",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
@@ -259,30 +259,30 @@ var Post = function Post() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
     alt: "no",
     src: "https://img5.goodfon.com/original/800x480/1/33/kotionok-malysh-zabor-boke.jpg",
-    className: "jsx-1428928937" + " " + "responsive",
+    className: "jsx-165176608" + " " + "responsive",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1428928937" + " " + "post-caption",
+    className: "jsx-165176608" + " " + "post-caption",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", {
-    className: "jsx-1428928937",
+    className: "jsx-165176608",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
-  }, "AAA"), " SSSS"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1428928937",
+  }, "The design should be mobile-first, and on the desktop version the bottom menu should instead be on top; with the labels"), ' ', "SSSS"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "165176608",
     __self: this
-  }, ".responsive.jsx-1428928937{width:100%;height:auto;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2NvbXBvbmVudHMvUG9zdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE0QmdCLEFBR29CLFdBQ0MsWUFDZCIsImZpbGUiOiIvaG9tZS9zYW1pdGgvRG9jdW1lbnRzL3JlYWN0LXdzL215LWluc3RhZ3JhbS9jb21wb25lbnRzL1Bvc3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBQb3N0ID0gKCkgPT4gKFxuICA8YXJ0aWNsZSBjbGFzc05hbWU9XCJwb3N0XCI+XG4gICAgPGhlYWRlcj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicG9zdC11c2VyXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicG9zdC11c2VyLWF2YXRhclwiPlxuICAgICAgICAgIDxpbWdcbiAgICAgICAgICAgIHNyYz1cImh0dHA6Ly93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci83N2E4N2NhMDU3MTc0MDNkMjgxMzE2NGZkMDc5YzRiYT9zPTIwMCZyPXBnXCJcbiAgICAgICAgICAgIGFsdD1cImltYWdlXCJcbiAgICAgICAgICAvPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwb3N0LXVzZXItbmlja25hbWVcIj5cbiAgICAgICAgICA8c3Bhbj5Mb3ZlIGFuZCBIYXBweTwvc3Bhbj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2Rpdj5cbiAgICA8L2hlYWRlcj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cInBvc3QtaW1hZ2VcIj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicG9zdC1pbWFnZS1iZ1wiPlxuICAgICAgICA8aW1nXG4gICAgICAgICAgY2xhc3NOYW1lPVwicmVzcG9uc2l2ZVwiXG4gICAgICAgICAgYWx0PVwibm9cIlxuICAgICAgICAgIHNyYz1cImh0dHBzOi8vaW1nNS5nb29kZm9uLmNvbS9vcmlnaW5hbC84MDB4NDgwLzEvMzMva290aW9ub2stbWFseXNoLXphYm9yLWJva2UuanBnXCJcbiAgICAgICAgLz5cbiAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuICAgIDxkaXYgY2xhc3NOYW1lPVwicG9zdC1jYXB0aW9uXCI+XG4gICAgICA8c3Ryb25nPkFBQTwvc3Ryb25nPiBTU1NTXG4gICAgPC9kaXY+XG5cbiAgICA8c3R5bGUganN4PntgXG4gICAgICAucmVzcG9uc2l2ZSB7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2FydGljbGU+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBQb3N0O1xuIl19 */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/components/Post.js */"));
+  }, ".post-user.jsx-165176608{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;padding:1rem;}.post-caption.jsx-165176608{padding:1rem;}.post-user-avatar.jsx-165176608>img.jsx-165176608{border-radius:50%;height:40px;}.post-user-nickname.jsx-165176608>span.jsx-165176608{color:#f17367;padding-left:0.5rem;font-weight:500;}.responsive.jsx-165176608{width:100%;height:auto;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2NvbXBvbmVudHMvUG9zdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFnQ2dCLEFBTXNCLEFBTUEsQUFHSyxBQUlKLEFBS0gsV0FDQyxFQVpkLENBT3NCLElBSlIsS0FVZCxPQVRBLElBSWtCLGdCQUNsQix3QkFmcUIsNkZBQ0UsNEVBQ1IsYUFDZiIsImZpbGUiOiIvaG9tZS9zYW1pdGgvRG9jdW1lbnRzL3JlYWN0LXdzL215LWluc3RhZ3JhbS9jb21wb25lbnRzL1Bvc3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBQb3N0ID0gKCkgPT4gKFxuICA8YXJ0aWNsZSBjbGFzc05hbWU9XCJwb3N0XCI+XG4gICAgPGhlYWRlcj5cbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwicG9zdC11c2VyXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicG9zdC11c2VyLWF2YXRhclwiPlxuICAgICAgICAgIDxpbWdcbiAgICAgICAgICAgIHNyYz1cImh0dHA6Ly93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci83N2E4N2NhMDU3MTc0MDNkMjgxMzE2NGZkMDc5YzRiYT9zPTIwMCZyPXBnXCJcbiAgICAgICAgICAgIGFsdD1cImltYWdlXCJcbiAgICAgICAgICAvPlxuICAgICAgICA8L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwb3N0LXVzZXItbmlja25hbWVcIj5cbiAgICAgICAgICA8c3Bhbj5zYW1pdGg1NTY8L3NwYW4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9oZWFkZXI+XG4gICAgPGRpdiBjbGFzc05hbWU9XCJwb3N0LWltYWdlXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInBvc3QtaW1hZ2UtYmdcIj5cbiAgICAgICAgPGltZ1xuICAgICAgICAgIGNsYXNzTmFtZT1cInJlc3BvbnNpdmVcIlxuICAgICAgICAgIGFsdD1cIm5vXCJcbiAgICAgICAgICBzcmM9XCJodHRwczovL2ltZzUuZ29vZGZvbi5jb20vb3JpZ2luYWwvODAweDQ4MC8xLzMzL2tvdGlvbm9rLW1hbHlzaC16YWJvci1ib2tlLmpwZ1wiXG4gICAgICAgIC8+XG4gICAgICA8L2Rpdj5cbiAgICA8L2Rpdj5cbiAgICA8ZGl2IGNsYXNzTmFtZT1cInBvc3QtY2FwdGlvblwiPlxuICAgICAgPHN0cm9uZz5cbiAgICAgICAgVGhlIGRlc2lnbiBzaG91bGQgYmUgbW9iaWxlLWZpcnN0LCBhbmQgb24gdGhlIGRlc2t0b3AgdmVyc2lvbiB0aGUgYm90dG9tXG4gICAgICAgIG1lbnUgc2hvdWxkIGluc3RlYWQgYmUgb24gdG9wOyB3aXRoIHRoZSBsYWJlbHNcbiAgICAgIDwvc3Ryb25nPnsnICd9XG4gICAgICBTU1NTXG4gICAgPC9kaXY+XG5cbiAgICA8c3R5bGUganN4PntgXG4gICAgICAucG9zdCB7XG4gICAgICAgIC8vIHBhZGRpbmc6IDFyZW07XG4gICAgICB9XG4gICAgICAucG9zdC11c2VyIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgICAgICBwYWRkaW5nOiAxcmVtO1xuICAgICAgfVxuICAgICAgLnBvc3QtY2FwdGlvbiB7XG4gICAgICAgIHBhZGRpbmc6IDFyZW07XG4gICAgICB9XG4gICAgICAucG9zdC11c2VyLWF2YXRhciA+IGltZyB7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICAgICAgaGVpZ2h0OiA0MHB4O1xuICAgICAgfVxuICAgICAgLnBvc3QtdXNlci1uaWNrbmFtZSA+IHNwYW4ge1xuICAgICAgICBjb2xvcjogI2YxNzM2NztcbiAgICAgICAgcGFkZGluZy1sZWZ0OiAwLjVyZW07XG4gICAgICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgICB9XG4gICAgICAucmVzcG9uc2l2ZSB7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2FydGljbGU+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBQb3N0O1xuIl19 */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/components/Post.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Post);
@@ -428,16 +428,16 @@ var _jsxFileName = "/home/samith/Documents/react-ws/my-instagram/layouts/Wrapper
 
 var Wrapper = function Wrapper(props) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1309998489" + " " + "wrapper",
+    className: "jsx-3202311852" + " " + "wrapper",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 2
     },
     __self: this
   }, props.children, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1309998489",
+    id: "3202311852",
     __self: this
-  }, ".wrapper.jsx-1309998489{width:100%;max-width:1000px;height:100%;background-color:green;}@media (min-width:800px){.wrapper.jsx-1309998489{margin:50px auto 0;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2xheW91dHMvV3JhcHBlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHZ0IsQUFHb0IsQUFPVSxXQU5KLFFBT2pCLFNBTlksWUFDVyx1QkFDekIiLCJmaWxlIjoiL2hvbWUvc2FtaXRoL0RvY3VtZW50cy9yZWFjdC13cy9teS1pbnN0YWdyYW0vbGF5b3V0cy9XcmFwcGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgV3JhcHBlciA9IHByb3BzID0+IChcbiAgPGRpdiBjbGFzc05hbWU9XCJ3cmFwcGVyXCI+XG4gICAge3Byb3BzLmNoaWxkcmVufVxuICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgIC53cmFwcGVyIHtcbiAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgIG1heC13aWR0aDogMTAwMHB4O1xuICAgICAgICBoZWlnaHQ6IDEwMCU7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IGdyZWVuO1xuICAgICAgfVxuICAgICAgQG1lZGlhIChtaW4td2lkdGg6IDgwMHB4KSB7XG4gICAgICAgIC53cmFwcGVyIHtcbiAgICAgICAgICBtYXJnaW46IDUwcHggYXV0byAwO1xuICAgICAgICB9XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IFdyYXBwZXI7XG4iXX0= */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/layouts/Wrapper.js */"));
+  }, ".wrapper.jsx-3202311852{width:100%;max-width:1000px;height:100%;}@media (min-width:800px){.wrapper.jsx-3202311852{margin:50px auto 0;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2xheW91dHMvV3JhcHBlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHZ0IsQUFHb0IsQUFPVSxXQU5KLFFBT2pCLFNBTlksWUFFZCIsImZpbGUiOiIvaG9tZS9zYW1pdGgvRG9jdW1lbnRzL3JlYWN0LXdzL215LWluc3RhZ3JhbS9sYXlvdXRzL1dyYXBwZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBXcmFwcGVyID0gcHJvcHMgPT4gKFxuICA8ZGl2IGNsYXNzTmFtZT1cIndyYXBwZXJcIj5cbiAgICB7cHJvcHMuY2hpbGRyZW59XG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgLndyYXBwZXIge1xuICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgbWF4LXdpZHRoOiAxMDAwcHg7XG4gICAgICAgIGhlaWdodDogMTAwJTtcbiAgICAgICAgLy8gYmFja2dyb3VuZC1jb2xvcjogZ3JlZW47XG4gICAgICB9XG4gICAgICBAbWVkaWEgKG1pbi13aWR0aDogODAwcHgpIHtcbiAgICAgICAgLndyYXBwZXIge1xuICAgICAgICAgIG1hcmdpbjogNTBweCBhdXRvIDA7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICBgfTwvc3R5bGU+XG4gIDwvZGl2PlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgV3JhcHBlcjtcbiJdfQ== */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/layouts/Wrapper.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Wrapper);
