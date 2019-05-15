@@ -1,18 +1,9 @@
 import Layout from '../layouts/Main';
-import Post from '../components/Post';
+import PostList from '../components/PostList';
 
 const Index = () => (
   <Layout>
-    <Post />
-    <Post />
-    <Post />
-    <Post />
-    <Post />
-    <Post />
-    <Post />
-    <Post />
-    <Post />
-    <Post />
+    <PostList />
   </Layout>
 );
 

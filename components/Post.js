@@ -1,38 +1,48 @@
-const Post = () => (
+import Link from 'next/link';
+
+const Post = ({ data }) => (
   <article className="post">
     <header>
       <div className="post-user">
         <div className="post-user-avatar">
-          <img
-            src="http://www.gravatar.com/avatar/77a87ca05717403d2813164fd079c4ba?s=200&r=pg"
-            alt="image"
-          />
+          <img src={data.profileImage} alt="image" />
         </div>
         <div className="post-user-nickname">
-          <span>samith556</span>
+          <span>{data.user}</span>
         </div>
       </div>
     </header>
     <div className="post-image">
       <div className="post-image-bg">
-        <img
-          className="responsive"
-          alt="no"
-          src="https://img5.goodfon.com/original/800x480/1/33/kotionok-malysh-zabor-boke.jpg"
-        />
+        <img className="responsive" alt="no" src={data.image} />
+      </div>
+      <div className="post-meta">
+        <div className="meta-info">
+          <span>Leaf iPhone case hard plastic</span>
+          <span className="cur">AED 230</span>
+        </div>
+        <div className="favourite">
+          <span>
+            <i className="fas fa-heart" />
+          </span>
+        </div>
       </div>
     </div>
     <div className="post-caption">
-      <strong>
-        The design should be mobile-first, and on the desktop version the bottom
-        menu should instead be on top; with the labels
-      </strong>{' '}
-      SSSS
+      <span className="post-likes">
+        <i className="fas fa-heart" />
+        {data.likes} likes
+      </span>
+      <p className="post-description">{data.description}</p>
+      <Link href="/">
+        <span className="post-comments">View {data.comments} comments</span>
+      </Link>
     </div>
 
     <style jsx>{`
       .post {
         // padding: 1rem;
+        border-bottom: 1px solid #e0e0e0;
       }
       .post-user {
         display: flex;
@@ -41,20 +51,65 @@ const Post = () => (
         padding: 1rem;
       }
       .post-caption {
-        padding: 1rem;
+        padding: 0.8rem 1rem;
       }
       .post-user-avatar > img {
         border-radius: 50%;
         height: 40px;
       }
       .post-user-nickname > span {
-        color: #f17367;
+        color: #7a33fb;
         padding-left: 0.5rem;
         font-weight: 500;
       }
       .responsive {
         width: 100%;
         height: auto;
+      }
+      .post-caption > .post-likes {
+        color: #7a33fb;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      .post-caption > .post-likes > i {
+        padding-right: 0.5rem;
+      }
+      .post-caption > .post-description {
+        font-size: 0.8rem;
+        padding: 0.5rem 0;
+      }
+      .post-caption > .post-comments {
+        font-size: 0.7rem;
+        color: #676767;
+        cursor: pointer;
+      }
+      .post-image {
+        position: relative;
+      }
+      .post-meta > .meta-info > span {
+        display: block;
+      }
+      .post-meta > .meta-info > span:nth-child(1) {
+        font-size: 0.9rem;
+      }
+      .post-meta > .meta-info > span:nth-child(2) {
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      .post-meta > .favourite > span {
+        display: block;
+      }
+      .post-meta {
+        padding: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
       }
     `}</style>
   </article>

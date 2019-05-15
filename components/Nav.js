@@ -15,6 +15,7 @@ const Nav = () => (
 
     <style jsx>{`
       .nav {
+        z-index: 100;
         background-color: #ff7668;
         color: #fff;
         display: flex;

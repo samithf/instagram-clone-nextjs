@@ -6,6 +6,7 @@ const Wrapper = props => (
         width: 100%;
         max-width: 1000px;
         height: 100%;
+        margin-bottom: 50px;
         // background-color: green;
       }
       @media (min-width: 800px) {
