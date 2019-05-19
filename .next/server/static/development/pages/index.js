@@ -93,6 +93,25 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./api/index.js":
+/*!**********************!*\
+  !*** ./api/index.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+ // central point to backend API
+
+/* harmony default export */ __webpack_exports__["default"] = (axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
+  baseURL: 'http://localhost:5000/api'
+}));
+
+/***/ }),
+
 /***/ "./components/Nav.js":
 /*!***************************!*\
   !*** ./components/Nav.js ***!
@@ -112,64 +131,85 @@ var _jsxFileName = "/home/samith/Documents/react-ws/my-instagram/components/Nav.
 
 
 
+/**
+ * will contain nav section of the application
+ */
+
 
 var Nav = function Nav() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "jsx-2631442977" + " " + "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "jsx-2631442977" + " " + "menu-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "jsx-2631442977" + " " + "fas fa-home fa-lg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 11
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/favorites",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 14
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     className: "jsx-2631442977" + " " + "menu-icon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
     className: "jsx-2631442977" + " " + "fas fa-heart fa-lg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 16
     },
     __self: this
   }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "2631442977",
     __self: this
-  }, ".nav.jsx-2631442977{z-index:100;background-color:#ff7668;color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;min-height:50px;position:fixed;bottom:0;left:0;width:100%;}.nav.jsx-2631442977>.menu-icon.jsx-2631442977{display:block;cursor:pointer;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;}@media (min-width:800px){.nav.jsx-2631442977{bottom:auto;top:0;left:50%;width:1000px;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2NvbXBvbmVudHMvTmF2LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWVnQixBQUdxQixBQWFFLEFBTUEsWUFsQlcsQUFtQmpCLEVBTk8sSUFPSixTQUNJLEVBUEcsUUFiUCxHQXFCb0IsUUFwQmxCLG9EQWFmLHNCQVorQixjQW9CN0IsNkdBbkJxQiw0RUFDTCxnQkFDRCxlQUNOLFNBQ0YsT0FDSSxXQUNiIiwiZmlsZSI6Ii9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2NvbXBvbmVudHMvTmF2LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IExpbmsgZnJvbSAnbmV4dC9saW5rJztcblxuY29uc3QgTmF2ID0gKCkgPT4gKFxuICA8ZGl2IGNsYXNzTmFtZT1cIm5hdlwiPlxuICAgIDxMaW5rIGhyZWY9XCIvXCI+XG4gICAgICA8c3BhbiBjbGFzc05hbWU9XCJtZW51LWljb25cIj5cbiAgICAgICAgPGkgY2xhc3NOYW1lPVwiZmFzIGZhLWhvbWUgZmEtbGdcIiAvPlxuICAgICAgPC9zcGFuPlxuICAgIDwvTGluaz5cbiAgICA8TGluayBocmVmPVwiL2Zhdm9yaXRlc1wiPlxuICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibWVudS1pY29uXCI+XG4gICAgICAgIDxpIGNsYXNzTmFtZT1cImZhcyBmYS1oZWFydCBmYS1sZ1wiIC8+XG4gICAgICA8L3NwYW4+XG4gICAgPC9MaW5rPlxuXG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgLm5hdiB7XG4gICAgICAgIHotaW5kZXg6IDEwMDtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmNzY2ODtcbiAgICAgICAgY29sb3I6ICNmZmY7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgICAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIG1pbi1oZWlnaHQ6IDUwcHg7XG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICAgICAgYm90dG9tOiAwO1xuICAgICAgICBsZWZ0OiAwO1xuICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgIH1cbiAgICAgIC5uYXYgPiAubWVudS1pY29uIHtcbiAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgYWxpZ24tc2VsZjogY2VudGVyO1xuICAgICAgfVxuICAgICAgQG1lZGlhIChtaW4td2lkdGg6IDgwMHB4KSB7XG4gICAgICAgIC5uYXYge1xuICAgICAgICAgIGJvdHRvbTogYXV0bztcbiAgICAgICAgICB0b3A6IDA7XG4gICAgICAgICAgbGVmdDogNTAlO1xuICAgICAgICAgIHdpZHRoOiAxMDAwcHg7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgMCk7XG4gICAgICAgIH1cbiAgICAgIH1cbiAgICBgfTwvc3R5bGU+XG4gIDwvZGl2PlxuKTtcblxuZXhwb3J0IGRlZmF1bHQgTmF2O1xuIl19 */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/components/Nav.js */"));
+  }, ".nav.jsx-2631442977{z-index:100;background-color:#ff7668;color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:space-around;-webkit-justify-content:space-around;-ms-flex-pack:space-around;justify-content:space-around;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;min-height:50px;position:fixed;bottom:0;left:0;width:100%;}.nav.jsx-2631442977>.menu-icon.jsx-2631442977{display:block;cursor:pointer;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;}@media (min-width:800px){.nav.jsx-2631442977{bottom:auto;top:0;left:50%;width:1000px;-webkit-transform:translate(-50%,0);-ms-transform:translate(-50%,0);transform:translate(-50%,0);}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2NvbXBvbmVudHMvTmF2LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW1CZ0IsQUFHcUIsQUFhRSxBQU1BLFlBbEJXLEFBbUJqQixFQU5PLElBT0osU0FDSSxFQVBHLFFBYlAsR0FxQm9CLFFBcEJsQixvREFhZixzQkFaK0IsY0FvQjdCLDZHQW5CcUIsNEVBQ0wsZ0JBQ0QsZUFDTixTQUNGLE9BQ0ksV0FDYiIsImZpbGUiOiIvaG9tZS9zYW1pdGgvRG9jdW1lbnRzL3JlYWN0LXdzL215LWluc3RhZ3JhbS9jb21wb25lbnRzL05hdi5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogd2lsbCBjb250YWluIG5hdiBzZWN0aW9uIG9mIHRoZSBhcHBsaWNhdGlvblxuICovXG5cbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5cbmNvbnN0IE5hdiA9ICgpID0+IChcbiAgPGRpdiBjbGFzc05hbWU9XCJuYXZcIj5cbiAgICA8TGluayBocmVmPVwiL1wiPlxuICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibWVudS1pY29uXCI+XG4gICAgICAgIDxpIGNsYXNzTmFtZT1cImZhcyBmYS1ob21lIGZhLWxnXCIgLz5cbiAgICAgIDwvc3Bhbj5cbiAgICA8L0xpbms+XG4gICAgPExpbmsgaHJlZj1cIi9mYXZvcml0ZXNcIj5cbiAgICAgIDxzcGFuIGNsYXNzTmFtZT1cIm1lbnUtaWNvblwiPlxuICAgICAgICA8aSBjbGFzc05hbWU9XCJmYXMgZmEtaGVhcnQgZmEtbGdcIiAvPlxuICAgICAgPC9zcGFuPlxuICAgIDwvTGluaz5cblxuICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgIC5uYXYge1xuICAgICAgICB6LWluZGV4OiAxMDA7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZjc2Njg7XG4gICAgICAgIGNvbG9yOiAjZmZmO1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICAgICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgICAgICBtaW4taGVpZ2h0OiA1MHB4O1xuICAgICAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgICAgIGJvdHRvbTogMDtcbiAgICAgICAgbGVmdDogMDtcbiAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICB9XG4gICAgICAubmF2ID4gLm1lbnUtaWNvbiB7XG4gICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGFsaWduLXNlbGY6IGNlbnRlcjtcbiAgICAgIH1cbiAgICAgIEBtZWRpYSAobWluLXdpZHRoOiA4MDBweCkge1xuICAgICAgICAubmF2IHtcbiAgICAgICAgICBib3R0b206IGF1dG87XG4gICAgICAgICAgdG9wOiAwO1xuICAgICAgICAgIGxlZnQ6IDUwJTtcbiAgICAgICAgICB3aWR0aDogMTAwMHB4O1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIDApO1xuICAgICAgICB9XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IE5hdjtcbiJdfQ== */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/components/Nav.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
+
+/***/ }),
+
+/***/ "./components/Post-Styles.js":
+/*!***********************************!*\
+  !*** ./components/Post-Styles.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// used external css as it is getting bigger :)
+var _defaultExport = new String(".post.jsx-3459370918{border-bottom:1px solid #e0e0e0;}.post-user.jsx-3459370918{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;padding:1rem;}.post-caption.jsx-3459370918{padding:0.8rem 1rem;}.post-user-avatar.jsx-3459370918>img.jsx-3459370918{border-radius:50%;height:40px;}.post-user-nickname.jsx-3459370918>span.jsx-3459370918{color:#7a33fb;padding-left:0.5rem;font-weight:500;}.responsive.jsx-3459370918{width:100%;height:auto;}.post-caption.jsx-3459370918>.post-likes.jsx-3459370918{color:#7a33fb;font-size:1rem;font-weight:500;}.post-caption.jsx-3459370918>.post-likes.jsx-3459370918>i.jsx-3459370918{padding-right:0.5rem;}.post-caption.jsx-3459370918>.post-description.jsx-3459370918{font-size:0.8rem;padding:0.5rem 0;}.post-caption.jsx-3459370918>.post-comments.jsx-3459370918{font-size:0.7rem;color:#676767;cursor:pointer;}.post-image.jsx-3459370918{position:relative;}.post-meta.jsx-3459370918>.meta-info.jsx-3459370918>span.jsx-3459370918{display:block;}.post-meta.jsx-3459370918>.meta-info.jsx-3459370918>span.jsx-3459370918:nth-child(1){font-size:0.9rem;}.post-meta.jsx-3459370918>.meta-info.jsx-3459370918>span.jsx-3459370918:nth-child(2){font-weight:500;font-size:1rem;}.post-meta.jsx-3459370918>.favourite.jsx-3459370918>span.jsx-3459370918{display:block;cursor:pointer;}.post-meta.jsx-3459370918{padding:1rem;width:100%;box-sizing:border-box;position:absolute;bottom:0;left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#fff;}");
+
+_defaultExport.__hash = "3459370918";
+/* harmony default export */ __webpack_exports__["default"] = (_defaultExport);
 
 /***/ }),
 
@@ -182,191 +222,312 @@ var Nav = function Nav() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../store */ "./store.js");
+/* harmony import */ var _Post_Styles__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./Post-Styles */ "./components/Post-Styles.js");
+
+
+
+
+
+
+
 var _jsxFileName = "/home/samith/Documents/react-ws/my-instagram/components/Post.js";
 
 
 
+/**
+ * Post component
+ * will hold specific post releted data
+ */
 
-var Post = function Post(_ref) {
-  var data = _ref.data;
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("article", {
-    className: "jsx-1196817582" + " " + "post",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
-    className: "jsx-1196817582",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1196817582" + " " + "post-user",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1196817582" + " " + "post-user-avatar",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    src: data.profileImage,
-    alt: "image",
-    className: "jsx-1196817582",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1196817582" + " " + "post-user-nickname",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "jsx-1196817582",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, data.user)))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1196817582" + " " + "post-image",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1196817582" + " " + "post-image-bg",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
-    alt: "no",
-    src: data.image,
-    className: "jsx-1196817582" + " " + "responsive",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1196817582" + " " + "post-meta",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1196817582" + " " + "meta-info",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "jsx-1196817582",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, "Leaf iPhone case hard plastic"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "jsx-1196817582" + " " + "cur",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, "AED 230")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1196817582" + " " + "favourite",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "jsx-1196817582",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-    className: "jsx-1196817582" + " " + "fas fa-heart",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-1196817582" + " " + "post-caption",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "jsx-1196817582" + " " + "post-likes",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-    className: "jsx-1196817582" + " " + "fas fa-heart",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }), data.likes, " likes"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-    className: "jsx-1196817582" + " " + "post-description",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, data.description), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "jsx-1196817582" + " " + "post-comments",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, "View ", data.comments, " comments"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1196817582",
-    __self: this
-  }, ".post.jsx-1196817582{border-bottom:1px solid #e0e0e0;}.post-user.jsx-1196817582{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;padding:1rem;}.post-caption.jsx-1196817582{padding:0.8rem 1rem;}.post-user-avatar.jsx-1196817582>img.jsx-1196817582{border-radius:50%;height:40px;}.post-user-nickname.jsx-1196817582>span.jsx-1196817582{color:#7a33fb;padding-left:0.5rem;font-weight:500;}.responsive.jsx-1196817582{width:100%;height:auto;}.post-caption.jsx-1196817582>.post-likes.jsx-1196817582{color:#7a33fb;font-size:1rem;font-weight:500;}.post-caption.jsx-1196817582>.post-likes.jsx-1196817582>i.jsx-1196817582{padding-right:0.5rem;}.post-caption.jsx-1196817582>.post-description.jsx-1196817582{font-size:0.8rem;padding:0.5rem 0;}.post-caption.jsx-1196817582>.post-comments.jsx-1196817582{font-size:0.7rem;color:#676767;cursor:pointer;}.post-image.jsx-1196817582{position:relative;}.post-meta.jsx-1196817582>.meta-info.jsx-1196817582>span.jsx-1196817582{display:block;}.post-meta.jsx-1196817582>.meta-info.jsx-1196817582>span.jsx-1196817582:nth-child(1){font-size:0.9rem;}.post-meta.jsx-1196817582>.meta-info.jsx-1196817582>span.jsx-1196817582:nth-child(2){font-weight:500;font-size:1rem;}.post-meta.jsx-1196817582>.favourite.jsx-1196817582>span.jsx-1196817582{display:block;}.post-meta.jsx-1196817582{padding:1rem;width:100%;box-sizing:border-box;position:absolute;bottom:0;left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#fff;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2NvbXBvbmVudHMvUG9zdC5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUF5Q2dCLEFBSXlDLEFBR25CLEFBTU8sQUFHRixBQUlKLEFBS0gsQUFJRyxBQUtPLEFBR0osQUFJQSxBQUtDLEFBR0osQUFHRyxBQUdELEFBSUYsQUFHRCxXQXBDRCxFQXFDRCxDQTFDUyxBQVNMLEFBb0JqQixBQVVBLEVBSmlCLENBbEJFLEFBSUgsQUFXaEIsQ0FwQ2MsQUE4QmQsRUFqQ0EsQ0FxQkEsRUFSQSxDQXFDd0IsS0FqQ04sQ0FibEIsQ0F5QmlCLEFBY2pCLENBcERBLEVBaUJrQixBQWlCbEIsV0FQQSxDQVlBLEFBcUJvQixJQTFDcEIsY0EyQ1csU0FDRixDQTNEWSxNQTRETiwwRUFDaUIsYUE1RFQsNEVBQ1IsYUFDZixhQTJEcUIsNkZBQ1IsV0FDYiIsImZpbGUiOiIvaG9tZS9zYW1pdGgvRG9jdW1lbnRzL3JlYWN0LXdzL215LWluc3RhZ3JhbS9jb21wb25lbnRzL1Bvc3QuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnO1xuXG5jb25zdCBQb3N0ID0gKHsgZGF0YSB9KSA9PiAoXG4gIDxhcnRpY2xlIGNsYXNzTmFtZT1cInBvc3RcIj5cbiAgICA8aGVhZGVyPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwb3N0LXVzZXJcIj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwb3N0LXVzZXItYXZhdGFyXCI+XG4gICAgICAgICAgPGltZyBzcmM9e2RhdGEucHJvZmlsZUltYWdlfSBhbHQ9XCJpbWFnZVwiIC8+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInBvc3QtdXNlci1uaWNrbmFtZVwiPlxuICAgICAgICAgIDxzcGFuPntkYXRhLnVzZXJ9PC9zcGFuPlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvZGl2PlxuICAgIDwvaGVhZGVyPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwicG9zdC1pbWFnZVwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJwb3N0LWltYWdlLWJnXCI+XG4gICAgICAgIDxpbWcgY2xhc3NOYW1lPVwicmVzcG9uc2l2ZVwiIGFsdD1cIm5vXCIgc3JjPXtkYXRhLmltYWdlfSAvPlxuICAgICAgPC9kaXY+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cInBvc3QtbWV0YVwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1ldGEtaW5mb1wiPlxuICAgICAgICAgIDxzcGFuPkxlYWYgaVBob25lIGNhc2UgaGFyZCBwbGFzdGljPC9zcGFuPlxuICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImN1clwiPkFFRCAyMzA8L3NwYW4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZhdm91cml0ZVwiPlxuICAgICAgICAgIDxzcGFuPlxuICAgICAgICAgICAgPGkgY2xhc3NOYW1lPVwiZmFzIGZhLWhlYXJ0XCIgLz5cbiAgICAgICAgICA8L3NwYW4+XG4gICAgICAgIDwvZGl2PlxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPGRpdiBjbGFzc05hbWU9XCJwb3N0LWNhcHRpb25cIj5cbiAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInBvc3QtbGlrZXNcIj5cbiAgICAgICAgPGkgY2xhc3NOYW1lPVwiZmFzIGZhLWhlYXJ0XCIgLz5cbiAgICAgICAge2RhdGEubGlrZXN9IGxpa2VzXG4gICAgICA8L3NwYW4+XG4gICAgICA8cCBjbGFzc05hbWU9XCJwb3N0LWRlc2NyaXB0aW9uXCI+e2RhdGEuZGVzY3JpcHRpb259PC9wPlxuICAgICAgPExpbmsgaHJlZj1cIi9cIj5cbiAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwicG9zdC1jb21tZW50c1wiPlZpZXcge2RhdGEuY29tbWVudHN9IGNvbW1lbnRzPC9zcGFuPlxuICAgICAgPC9MaW5rPlxuICAgIDwvZGl2PlxuXG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgLnBvc3Qge1xuICAgICAgICAvLyBwYWRkaW5nOiAxcmVtO1xuICAgICAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2UwZTBlMDtcbiAgICAgIH1cbiAgICAgIC5wb3N0LXVzZXIge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHBhZGRpbmc6IDFyZW07XG4gICAgICB9XG4gICAgICAucG9zdC1jYXB0aW9uIHtcbiAgICAgICAgcGFkZGluZzogMC44cmVtIDFyZW07XG4gICAgICB9XG4gICAgICAucG9zdC11c2VyLWF2YXRhciA+IGltZyB7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICAgICAgaGVpZ2h0OiA0MHB4O1xuICAgICAgfVxuICAgICAgLnBvc3QtdXNlci1uaWNrbmFtZSA+IHNwYW4ge1xuICAgICAgICBjb2xvcjogIzdhMzNmYjtcbiAgICAgICAgcGFkZGluZy1sZWZ0OiAwLjVyZW07XG4gICAgICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgICB9XG4gICAgICAucmVzcG9uc2l2ZSB7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgICAucG9zdC1jYXB0aW9uID4gLnBvc3QtbGlrZXMge1xuICAgICAgICBjb2xvcjogIzdhMzNmYjtcbiAgICAgICAgZm9udC1zaXplOiAxcmVtO1xuICAgICAgICBmb250LXdlaWdodDogNTAwO1xuICAgICAgfVxuICAgICAgLnBvc3QtY2FwdGlvbiA+IC5wb3N0LWxpa2VzID4gaSB7XG4gICAgICAgIHBhZGRpbmctcmlnaHQ6IDAuNXJlbTtcbiAgICAgIH1cbiAgICAgIC5wb3N0LWNhcHRpb24gPiAucG9zdC1kZXNjcmlwdGlvbiB7XG4gICAgICAgIGZvbnQtc2l6ZTogMC44cmVtO1xuICAgICAgICBwYWRkaW5nOiAwLjVyZW0gMDtcbiAgICAgIH1cbiAgICAgIC5wb3N0LWNhcHRpb24gPiAucG9zdC1jb21tZW50cyB7XG4gICAgICAgIGZvbnQtc2l6ZTogMC43cmVtO1xuICAgICAgICBjb2xvcjogIzY3Njc2NztcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgfVxuICAgICAgLnBvc3QtaW1hZ2Uge1xuICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB9XG4gICAgICAucG9zdC1tZXRhID4gLm1ldGEtaW5mbyA+IHNwYW4ge1xuICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgIH1cbiAgICAgIC5wb3N0LW1ldGEgPiAubWV0YS1pbmZvID4gc3BhbjpudGgtY2hpbGQoMSkge1xuICAgICAgICBmb250LXNpemU6IDAuOXJlbTtcbiAgICAgIH1cbiAgICAgIC5wb3N0LW1ldGEgPiAubWV0YS1pbmZvID4gc3BhbjpudGgtY2hpbGQoMikge1xuICAgICAgICBmb250LXdlaWdodDogNTAwO1xuICAgICAgICBmb250LXNpemU6IDFyZW07XG4gICAgICB9XG4gICAgICAucG9zdC1tZXRhID4gLmZhdm91cml0ZSA+IHNwYW4ge1xuICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgIH1cbiAgICAgIC5wb3N0LW1ldGEge1xuICAgICAgICBwYWRkaW5nOiAxcmVtO1xuICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICBib3R0b206IDA7XG4gICAgICAgIGxlZnQ6IDA7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgY29sb3I6ICNmZmY7XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2FydGljbGU+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBQb3N0O1xuIl19 */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/components/Post.js */"));
+
+
+
+
+var Post =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Post, _React$Component);
+
+  function Post() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Post);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Post).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Post, [{
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      var _this$props = this.props,
+          post = _this$props.post,
+          loggedUser = _this$props.loggedUser;
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("article", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("header", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post-user",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post-user-avatar",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
+        src: post.user.avatarUrl,
+        alt: "image",
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post-user-nickname",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23
+        },
+        __self: this
+      }, post.user.username)))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post-image",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post-image-bg",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
+        alt: "no",
+        src: post.imageUrl,
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "responsive",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post-meta",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "meta-info",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, post.title), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "cur",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, "AED ", post.price)), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "favourite",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        onClick: function onClick() {
+          _this.updateUserLikes(loggedUser, post._id);
+        },
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "".concat(this.isGuestLiked(post._id, loggedUser) ? 'fas' : 'far', " fa-heart"),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }))))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post-caption",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post-likes",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "fas fa-heart",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }), post.numOfLikes, " likes"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post-description",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }, post.description), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        href: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+        className: "jsx-".concat(_Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash) + " " + "post-comments",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      }, "View ", post.numOfComments, " comments"))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        id: _Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"].__hash,
+        __self: this
+      }, _Post_Styles__WEBPACK_IMPORTED_MODULE_12__["default"]));
+    } // when user clicks 'heart' symble on the post
+    // we will update 'logged user liked posts' and 'number of likes for this post'
+
+  }, {
+    key: "updateUserLikes",
+    value: function () {
+      var _updateUserLikes = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(loggedUser, postId) {
+        var index, likes;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                index = loggedUser.likes.indexOf(postId);
+                likes = 0;
+
+                if (index === -1) {
+                  alert('you liked it');
+                  loggedUser.likes.push(postId);
+                  likes = 1;
+                } else {
+                  alert('you disliked it');
+                  loggedUser.likes.splice(index, 1);
+                  likes = -1;
+                }
+
+                _context.next = 5;
+                return this.props.toggleLikePost(loggedUser._id, loggedUser);
+
+              case 5:
+                this.updatePostLikes(postId, likes);
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function updateUserLikes(_x, _x2) {
+        return _updateUserLikes.apply(this, arguments);
+      }
+
+      return updateUserLikes;
+    }()
+  }, {
+    key: "updatePostLikes",
+    value: function updatePostLikes(postId, likes) {
+      var post = this.props.posts.find(function (post) {
+        return post._id == postId;
+      });
+      post.numOfLikes += likes;
+      this.props.updatePostLikes(postId, post);
+    }
+  }, {
+    key: "isGuestLiked",
+    value: function isGuestLiked(postId, loggedUser) {
+      return loggedUser && loggedUser.likes.indexOf(postId) >= 0;
+    }
+  }]);
+
+  return Post;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    loggedUser: state.loggedUser,
+    posts: state.posts
+  };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Post);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_10__["connect"])(mapStateToProps, {
+  toggleLikePost: _store__WEBPACK_IMPORTED_MODULE_11__["toggleLikePost"],
+  updatePostLikes: _store__WEBPACK_IMPORTED_MODULE_11__["updatePostLikes"]
+})(Post));
 
 /***/ }),
 
@@ -379,101 +540,37 @@ var Post = function Post(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Post */ "./components/Post.js");
-
-
-
-
-
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Post__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Post */ "./components/Post.js");
 var _jsxFileName = "/home/samith/Documents/react-ws/my-instagram/components/PostList.js";
 
 
+/**
+ * wrapper of Post components
+ */
 
-var PostList =
-/*#__PURE__*/
-function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(PostList, _React$Component);
 
-  function PostList() {
-    var _getPrototypeOf2;
-
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, PostList);
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(PostList)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
-      posts: [{
-        id: 1,
-        user: 'samith673',
-        profileImage: 'http://www.gravatar.com/avatar/77a87ca05717403d2813164fd079c4ba?s=200&r=pg',
-        image: 'https://img3.goodfon.com/original/800x480/6/d5/5120x2880-mac-os-os-x-10-10-9.jpg',
-        likes: 22,
-        description: "The design should be mobile-first, and on the desktop version the bottom\n        menu should instead be on top; with the labels",
-        comments: 16
-      }, {
-        id: 2,
-        user: 'amila673',
-        profileImage: 'http://www.gravatar.com/avatar/77a87ca05717403d2813164fd079c4ba?s=200&r=pg',
-        image: 'https://img3.goodfon.com/original/800x480/6/d5/5120x2880-mac-os-os-x-10-10-9.jpg',
-        likes: 22,
-        description: "The design should be mobile-first, and on the desktop version the bottom\n        menu should instead be on top; with the labels",
-        comments: 16
-      }, {
-        id: 3,
-        user: 'amila673',
-        profileImage: 'http://www.gravatar.com/avatar/77a87ca05717403d2813164fd079c4ba?s=200&r=pg',
-        image: 'https://img3.goodfon.com/original/800x480/6/d5/5120x2880-mac-os-os-x-10-10-9.jpg',
-        likes: 22,
-        description: "The design should be mobile-first, and on the desktop version the bottom\n        menu should instead be on top; with the labels",
-        comments: 16
-      }]
+var PostList = function PostList(_ref) {
+  var posts = _ref.posts;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, posts.map(function (post) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Post__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      post: post,
+      key: post._id,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 10
+      },
+      __self: this
     });
-
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(PostList, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 47
-        },
-        __self: this
-      }, this.state.posts.map(function (post) {
-        return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Post__WEBPACK_IMPORTED_MODULE_8__["default"], {
-          data: post,
-          key: post.id,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 49
-          },
-          __self: this
-        });
-      }));
-    }
-  }]);
-
-  return PostList;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
+  }));
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (PostList);
 
@@ -500,6 +597,11 @@ var _jsxFileName = "/home/samith/Documents/react-ws/my-instagram/layouts/Main.js
 
 
 
+/**
+ * This is the main container of the application
+ * used as 'Layout' inside apllication
+ */
+
 
 
 
@@ -507,29 +609,29 @@ var Main = function Main(props) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Wrapper__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", {
     className: "jsx-52711470",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 12
     },
     __self: this
-  }, "Hello"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }, "My Instagram"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1",
     className: "jsx-52711470",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 13
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -537,7 +639,7 @@ var Main = function Main(props) {
     className: "jsx-52711470",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 14
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
@@ -546,7 +648,7 @@ var Main = function Main(props) {
     className: "jsx-52711470",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 16
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
@@ -557,7 +659,7 @@ var Main = function Main(props) {
     className: "jsx-52711470",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 21
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("link", {
@@ -566,30 +668,30 @@ var Main = function Main(props) {
     className: "jsx-52711470",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 28
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "52711470",
     __self: this
-  }, "body{font-family:'Raleway',sans-serif;margin:0;padding:0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2xheW91dHMvTWFpbi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFzQnVCLEFBRzJDLGlDQUN6QixTQUNDLFVBQ1oiLCJmaWxlIjoiL2hvbWUvc2FtaXRoL0RvY3VtZW50cy9yZWFjdC13cy9teS1pbnN0YWdyYW0vbGF5b3V0cy9NYWluLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFdyYXBwZXIgZnJvbSAnLi9XcmFwcGVyJztcbmltcG9ydCBOYXYgZnJvbSAnLi4vY29tcG9uZW50cy9OYXYnO1xuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcblxuY29uc3QgTWFpbiA9IHByb3BzID0+IChcbiAgPFdyYXBwZXI+XG4gICAgPEhlYWQ+XG4gICAgICA8dGl0bGU+SGVsbG88L3RpdGxlPlxuICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgICA8bGlua1xuICAgICAgICBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJhbGV3YXk6NDAwLDUwMFwiXG4gICAgICAgIHJlbD1cInN0eWxlc2hlZXRcIlxuICAgICAgLz5cbiAgICAgIDxsaW5rXG4gICAgICAgIHJlbD1cInN0eWxlc2hlZXRcIlxuICAgICAgICBocmVmPVwiaHR0cHM6Ly91c2UuZm9udGF3ZXNvbWUuY29tL3JlbGVhc2VzL3Y1LjguMi9jc3MvYWxsLmNzc1wiXG4gICAgICAgIGludGVncml0eT1cInNoYTM4NC1vUzN2Sld2KzBVanpCZlF6WVVodERZVytQajJ5Y2lESnhwc0sxT1lQQVlqcVQwODVRcS8xY3E1RkxYQVpRN0F5XCJcbiAgICAgICAgY3Jvc3NvcmlnaW49XCJhbm9ueW1vdXNcIlxuICAgICAgLz5cbiAgICAgIDxsaW5rIHJlbD1cInN0eWxlc2hlZXRcIiBocmVmPVwiLi4vc3RhdGljL3N0eWxlcy9yZXNldC5jc3NcIiAvPlxuICAgIDwvSGVhZD5cbiAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgYm9keSB7XG4gICAgICAgIGZvbnQtZmFtaWx5OiAnUmFsZXdheScsIHNhbnMtc2VyaWY7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgcGFkZGluZzogMDtcbiAgICAgIH1cbiAgICBgfTwvc3R5bGU+XG4gICAgPGhlYWRlcj5cbiAgICAgIDxOYXYgLz5cbiAgICA8L2hlYWRlcj5cbiAgICA8bWFpbj57cHJvcHMuY2hpbGRyZW59PC9tYWluPlxuICA8L1dyYXBwZXI+XG4pO1xuXG5leHBvcnQgZGVmYXVsdCBNYWluO1xuIl19 */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/layouts/Main.js */"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
+  }, "body{font-family:'Raleway',sans-serif;margin:0;padding:0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2xheW91dHMvTWFpbi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUE2QnVCLEFBRzJDLGlDQUN6QixTQUNDLFVBQ1oiLCJmaWxlIjoiL2hvbWUvc2FtaXRoL0RvY3VtZW50cy9yZWFjdC13cy9teS1pbnN0YWdyYW0vbGF5b3V0cy9NYWluLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBUaGlzIGlzIHRoZSBtYWluIGNvbnRhaW5lciBvZiB0aGUgYXBwbGljYXRpb25cbiAqIHVzZWQgYXMgJ0xheW91dCcgaW5zaWRlIGFwbGxpY2F0aW9uXG4gKi9cbmltcG9ydCBXcmFwcGVyIGZyb20gJy4vV3JhcHBlcic7XG5pbXBvcnQgTmF2IGZyb20gJy4uL2NvbXBvbmVudHMvTmF2JztcbmltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCc7XG5cbmNvbnN0IE1haW4gPSBwcm9wcyA9PiAoXG4gIDxXcmFwcGVyPlxuICAgIDxIZWFkPlxuICAgICAgPHRpdGxlPk15IEluc3RhZ3JhbTwvdGl0bGU+XG4gICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTFcIiAvPlxuICAgICAgPG1ldGEgY2hhclNldD1cInV0Zi04XCIgLz5cbiAgICAgIHsvKiBtYWluIGZvbnQgaXMgR29vZ2xlJ3MgJ1JhbGV3YXknICovfVxuICAgICAgPGxpbmtcbiAgICAgICAgaHJlZj1cImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1SYWxld2F5OjQwMCw1MDBcIlxuICAgICAgICByZWw9XCJzdHlsZXNoZWV0XCJcbiAgICAgIC8+XG4gICAgICB7LyogbG9hZCBmb250YXdlc29tZSBmb3IgaWNvbnMgKi99XG4gICAgICA8bGlua1xuICAgICAgICByZWw9XCJzdHlsZXNoZWV0XCJcbiAgICAgICAgaHJlZj1cImh0dHBzOi8vdXNlLmZvbnRhd2Vzb21lLmNvbS9yZWxlYXNlcy92NS44LjIvY3NzL2FsbC5jc3NcIlxuICAgICAgICBpbnRlZ3JpdHk9XCJzaGEzODQtb1MzdkpXdiswVWp6QmZRellVaHREWVcrUGoyeWNpREp4cHNLMU9ZUEFZanFUMDg1UXEvMWNxNUZMWEFaUTdBeVwiXG4gICAgICAgIGNyb3Nzb3JpZ2luPVwiYW5vbnltb3VzXCJcbiAgICAgIC8+XG4gICAgICB7LyogY3NzIHJlc2V0IGFkZGVkLi4gZGlkIG5vdCB1c2UgYW55IGNzcyBsaWJyYXJ5IGZvciB0aGlzIGFwcGxpY2F0aW9uICovfVxuICAgICAgPGxpbmsgcmVsPVwic3R5bGVzaGVldFwiIGhyZWY9XCIuLi9zdGF0aWMvc3R5bGVzL3Jlc2V0LmNzc1wiIC8+XG4gICAgPC9IZWFkPlxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICBib2R5IHtcbiAgICAgICAgZm9udC1mYW1pbHk6ICdSYWxld2F5Jywgc2Fucy1zZXJpZjtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgICA8aGVhZGVyPlxuICAgICAgPE5hdiAvPlxuICAgIDwvaGVhZGVyPlxuICAgIDxtYWluPntwcm9wcy5jaGlsZHJlbn08L21haW4+XG4gIDwvV3JhcHBlcj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IE1haW47XG4iXX0= */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/layouts/Main.js */"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("header", {
     className: "jsx-52711470",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 38
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", {
     className: "jsx-52711470",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 40
     },
     __self: this
   }, props.children));
@@ -612,25 +714,65 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/home/samith/Documents/react-ws/my-instagram/layouts/Wrapper.js";
 
 
 
+/**
+ * application wrapper. wrapper of the main component
+ */
+
+
 var Wrapper = function Wrapper(props) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: "jsx-3741786572" + " " + "wrapper",
+    className: "jsx-227820007" + " " + "wrapper",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 7
     },
     __self: this
-  }, props.children, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3741786572",
+  }, props.children, ",", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "227820007",
     __self: this
-  }, ".wrapper.jsx-3741786572{width:100%;max-width:1000px;height:100%;margin-bottom:50px;}@media (min-width:800px){.wrapper.jsx-3741786572{margin:50px auto 0;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2xheW91dHMvV3JhcHBlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHZ0IsQUFHb0IsQUFRVSxXQVBKLFFBUWpCLFNBUFksWUFDTyxtQkFFckIiLCJmaWxlIjoiL2hvbWUvc2FtaXRoL0RvY3VtZW50cy9yZWFjdC13cy9teS1pbnN0YWdyYW0vbGF5b3V0cy9XcmFwcGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgV3JhcHBlciA9IHByb3BzID0+IChcbiAgPGRpdiBjbGFzc05hbWU9XCJ3cmFwcGVyXCI+XG4gICAge3Byb3BzLmNoaWxkcmVufVxuICAgIDxzdHlsZSBqc3g+e2BcbiAgICAgIC53cmFwcGVyIHtcbiAgICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICAgIG1heC13aWR0aDogMTAwMHB4O1xuICAgICAgICBoZWlnaHQ6IDEwMCU7XG4gICAgICAgIG1hcmdpbi1ib3R0b206IDUwcHg7XG4gICAgICAgIC8vIGJhY2tncm91bmQtY29sb3I6IGdyZWVuO1xuICAgICAgfVxuICAgICAgQG1lZGlhIChtaW4td2lkdGg6IDgwMHB4KSB7XG4gICAgICAgIC53cmFwcGVyIHtcbiAgICAgICAgICBtYXJnaW46IDUwcHggYXV0byAwO1xuICAgICAgICB9XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IFdyYXBwZXI7XG4iXX0= */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/layouts/Wrapper.js */"));
+  }, ".wrapper.jsx-227820007{width:100%;max-width:1000px;height:100%;margin-bottom:50px;}@media (min-width:800px){.wrapper.jsx-227820007{margin:50px auto 0;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3NhbWl0aC9Eb2N1bWVudHMvcmVhY3Qtd3MvbXktaW5zdGFncmFtL2xheW91dHMvV3JhcHBlci5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFRZ0IsQUFHb0IsQUFPVSxXQU5KLFFBT2pCLFNBTlksWUFDTyxtQkFDckIiLCJmaWxlIjoiL2hvbWUvc2FtaXRoL0RvY3VtZW50cy9yZWFjdC13cy9teS1pbnN0YWdyYW0vbGF5b3V0cy9XcmFwcGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBhcHBsaWNhdGlvbiB3cmFwcGVyLiB3cmFwcGVyIG9mIHRoZSBtYWluIGNvbXBvbmVudFxuICovXG5pbXBvcnQgeyBQcm92aWRlciB9IGZyb20gJ3JlYWN0LXJlZHV4JztcblxuY29uc3QgV3JhcHBlciA9IHByb3BzID0+IChcbiAgPGRpdiBjbGFzc05hbWU9XCJ3cmFwcGVyXCI+XG4gICAge3Byb3BzLmNoaWxkcmVufSxcbiAgICA8c3R5bGUganN4PntgXG4gICAgICAud3JhcHBlciB7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBtYXgtd2lkdGg6IDEwMDBweDtcbiAgICAgICAgaGVpZ2h0OiAxMDAlO1xuICAgICAgICBtYXJnaW4tYm90dG9tOiA1MHB4O1xuICAgICAgfVxuICAgICAgQG1lZGlhIChtaW4td2lkdGg6IDgwMHB4KSB7XG4gICAgICAgIC53cmFwcGVyIHtcbiAgICAgICAgICBtYXJnaW46IDUwcHggYXV0byAwO1xuICAgICAgICB9XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IFdyYXBwZXI7XG4iXX0= */\n/*@ sourceURL=/home/samith/Documents/react-ws/my-instagram/layouts/Wrapper.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Wrapper);
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/array/from.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/array/from */ "core-js/library/fn/array/from");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ "core-js/library/fn/array/is-array");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/is-iterable */ "core-js/library/fn/is-iterable");
 
 /***/ }),
 
@@ -667,6 +809,28 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "core-js/library/fn/object/get-own-property-symbols");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js":
 /*!********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js ***!
@@ -678,6 +842,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core-js/library/fn/object/keys");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js":
 /*!********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/set-prototype-of.js ***!
@@ -686,6 +861,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/set-prototype-of */ "core-js/library/fn/object/set-prototype-of");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/promise.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "core-js/library/fn/promise");
 
 /***/ }),
 
@@ -777,6 +963,31 @@ module.exports = _createClass;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithoutHoles; });
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
+
+function _arrayWithoutHoles(arr) {
+  if (_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js":
 /*!**********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js ***!
@@ -793,6 +1004,58 @@ function _assertThisInitialized(self) {
   }
 
   return self;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _asyncToGenerator; });
+/* harmony import */ var _core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
+/* harmony import */ var _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
+  try {
+    var info = gen[key](arg);
+    var value = info.value;
+  } catch (error) {
+    reject(error);
+    return;
+  }
+
+  if (info.done) {
+    resolve(value);
+  } else {
+    _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a.resolve(value).then(_next, _throw);
+  }
+}
+
+function _asyncToGenerator(fn) {
+  return function () {
+    var self = this,
+        args = arguments;
+    return new _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a(function (resolve, reject) {
+      var gen = fn.apply(self, args);
+
+      function _next(value) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
+      }
+
+      function _throw(err) {
+        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
+      }
+
+      _next(undefined);
+    });
+  };
 }
 
 /***/ }),
@@ -935,6 +1198,87 @@ function _inherits(subClass, superClass) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArray; });
+/* harmony import */ var _core_js_array_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
+/* harmony import */ var _core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_from__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/is-iterable */ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js");
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _iterableToArray(iter) {
+  if (_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default()(Object(iter)) || Object.prototype.toString.call(iter) === "[object Arguments]") return _core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default()(iter);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableSpread; });
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+
+
+
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
+
+    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
+      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
+        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js":
 /*!**************************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js ***!
@@ -979,6 +1323,28 @@ function _setPrototypeOf(o, p) {
   };
 
   return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _toConsumableArray; });
+/* harmony import */ var _arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js");
+/* harmony import */ var _iterableToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js");
+/* harmony import */ var _nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js");
+
+
+
+function _toConsumableArray(arr) {
+  return Object(_arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(arr) || Object(_nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__["default"])();
 }
 
 /***/ }),
@@ -1160,6 +1526,18 @@ function _typeof(obj) {
 }
 
 module.exports = _typeof;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/regenerator/index.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/regenerator/index.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ "regenerator-runtime");
+
 
 /***/ }),
 
@@ -2184,32 +2562,399 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _layouts_Main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layouts/Main */ "./layouts/Main.js");
-/* harmony import */ var _components_PostList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PostList */ "./components/PostList.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _layouts_Main__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../layouts/Main */ "./layouts/Main.js");
+/* harmony import */ var _components_PostList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/PostList */ "./components/PostList.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! axios */ "axios");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../store */ "./store.js");
+
+
+
+
+
 var _jsxFileName = "/home/samith/Documents/react-ws/my-instagram/pages/index.js";
 
+/**
+ * Index page and the default route of the application
+ */
 
 
 
-var Index = function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_Main__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_PostList__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }));
+
+
+
+
+var Index =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Index, _React$Component);
+
+  function Index() {
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
+
+    return Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index).apply(this, arguments));
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
+    key: "componentDidMount",
+    // first will fetch 'logged user' and 'all posts' to our app and place then in the store
+    value: function componentDidMount() {
+      this.props.getLoggedUser();
+      this.props.getAllPosts();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_layouts_Main__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_PostList__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        posts: this.props.posts,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }));
+    }
+  }]);
+
+  return Index;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    posts: state.posts
+  };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Index);
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, {
+  getLoggedUser: _store__WEBPACK_IMPORTED_MODULE_10__["getLoggedUser"],
+  getAllPosts: _store__WEBPACK_IMPORTED_MODULE_10__["getAllPosts"]
+})(Index));
+
+/***/ }),
+
+/***/ "./store.js":
+/*!******************!*\
+  !*** ./store.js ***!
+  \******************/
+/*! exports provided: actionTypes, reducer, getLoggedUser, toggleLikePost, updatePostLikes, getAllPosts, getGuestLikedPosts, updateUser, initializeStore */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "actionTypes", function() { return actionTypes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "reducer", function() { return reducer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getLoggedUser", function() { return getLoggedUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toggleLikePost", function() { return toggleLikePost; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updatePostLikes", function() { return updatePostLikes; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getAllPosts", function() { return getAllPosts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getGuestLikedPosts", function() { return getGuestLikedPosts; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "updateUser", function() { return updateUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "initializeStore", function() { return initializeStore; });
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
+/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! redux */ "redux");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! redux-thunk */ "redux-thunk");
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(redux_thunk__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! redux-devtools-extension */ "redux-devtools-extension");
+/* harmony import */ var redux_devtools_extension__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./api */ "./api/index.js");
+
+
+
+
+
+
+
+
+var initialState = {
+  loggedUser: null,
+  // a Guest user will log automatically
+  posts: [],
+  // number of post we have
+  guestLikedPosts: []
+};
+var actionTypes = {
+  LOGGED_USER: 'LOGGED_USER',
+  TOGGLE_POST: 'TOGGLE_POST',
+  ALL_POSTS: 'ALL_POSTS',
+  UPDATE_POST: 'UPDATE_POST',
+  GUEST_LIKED_POSTS: 'GUEST_LIKED_POSTS',
+  UPDATE_USER: 'UPDATE_USER'
+}; // REDUCERS
+
+var reducer = function reducer() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case actionTypes.LOGGED_USER || actionTypes.TOGGLE_POST:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, state, {
+        loggedUser: action.payload
+      });
+
+    case actionTypes.ALL_POSTS:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, state, {
+        posts: action.payload
+      });
+
+    case actionTypes.GUEST_LIKED_POSTS:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, state, {
+        guestLikedPosts: action.payload
+      });
+
+    case actionTypes.UPDATE_POST:
+      var index = state.posts.findIndex(function (post) {
+        return post._id === action.payload._id;
+      });
+      state.posts[index] = action.payload;
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, state, {
+        posts: Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_2__["default"])(state.posts)
+      });
+
+    default:
+      return state;
+  }
+}; // ACTIONS
+
+var getLoggedUser = function getLoggedUser() {
+  return (
+    /*#__PURE__*/
+    function () {
+      var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(dispatch) {
+        var response;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return _api__WEBPACK_IMPORTED_MODULE_7__["default"].get('/users/loggedUser');
+
+              case 2:
+                response = _context.sent;
+                dispatch({
+                  type: actionTypes.LOGGED_USER,
+                  payload: response.data
+                });
+
+              case 4:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function (_x) {
+        return _ref.apply(this, arguments);
+      };
+    }()
+  );
+};
+var toggleLikePost = function toggleLikePost(userId, body) {
+  return (
+    /*#__PURE__*/
+    function () {
+      var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(dispatch) {
+        var response;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                _context2.next = 2;
+                return _api__WEBPACK_IMPORTED_MODULE_7__["default"].put("/users/".concat(userId), body);
+
+              case 2:
+                response = _context2.sent;
+                dispatch({
+                  type: actionTypes.TOGGLE_POST,
+                  payload: response.data
+                });
+
+              case 4:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }));
+
+      return function (_x2) {
+        return _ref2.apply(this, arguments);
+      };
+    }()
+  );
+};
+var updatePostLikes = function updatePostLikes(postId, body) {
+  return (
+    /*#__PURE__*/
+    function () {
+      var _ref3 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(dispatch) {
+        var response;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                _context3.next = 2;
+                return _api__WEBPACK_IMPORTED_MODULE_7__["default"].put("/posts/".concat(postId), body);
+
+              case 2:
+                response = _context3.sent;
+                dispatch({
+                  type: actionTypes.UPDATE_POST,
+                  payload: response.data
+                });
+
+              case 4:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
+      }));
+
+      return function (_x3) {
+        return _ref3.apply(this, arguments);
+      };
+    }()
+  );
+};
+var getAllPosts = function getAllPosts() {
+  return (
+    /*#__PURE__*/
+    function () {
+      var _ref4 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(dispatch) {
+        var response;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                _context4.next = 2;
+                return _api__WEBPACK_IMPORTED_MODULE_7__["default"].get('/posts');
+
+              case 2:
+                response = _context4.sent;
+                dispatch({
+                  type: actionTypes.ALL_POSTS,
+                  payload: response.data
+                });
+
+              case 4:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4);
+      }));
+
+      return function (_x4) {
+        return _ref4.apply(this, arguments);
+      };
+    }()
+  );
+};
+var getGuestLikedPosts = function getGuestLikedPosts() {
+  return (
+    /*#__PURE__*/
+    function () {
+      var _ref5 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5(dispatch) {
+        var response;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                _context5.next = 2;
+                return _api__WEBPACK_IMPORTED_MODULE_7__["default"].get('/users/liked_posts');
+
+              case 2:
+                response = _context5.sent;
+                dispatch({
+                  type: actionTypes.GUEST_LIKED_POSTS,
+                  payload: response.data
+                });
+
+              case 4:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5);
+      }));
+
+      return function (_x5) {
+        return _ref5.apply(this, arguments);
+      };
+    }()
+  );
+};
+var updateUser = function updateUser(userId, body) {
+  return (
+    /*#__PURE__*/
+    function () {
+      var _ref6 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6(dispatch) {
+        var response;
+        return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee6$(_context6) {
+          while (1) {
+            switch (_context6.prev = _context6.next) {
+              case 0:
+                _context6.next = 2;
+                return _api__WEBPACK_IMPORTED_MODULE_7__["default"].put("/users/".concat(userId), body);
+
+              case 2:
+                response = _context6.sent;
+                dispatch({
+                  type: actionTypes.UPDATE_USER,
+                  payload: response.data
+                });
+
+              case 4:
+              case "end":
+                return _context6.stop();
+            }
+          }
+        }, _callee6);
+      }));
+
+      return function (_x6) {
+        return _ref6.apply(this, arguments);
+      };
+    }()
+  );
+};
+function initializeStore() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  return Object(redux__WEBPACK_IMPORTED_MODULE_4__["createStore"])(reducer, state, Object(redux_devtools_extension__WEBPACK_IMPORTED_MODULE_6__["composeWithDevTools"])(Object(redux__WEBPACK_IMPORTED_MODULE_4__["applyMiddleware"])(redux_thunk__WEBPACK_IMPORTED_MODULE_5___default.a)));
+}
 
 /***/ }),
 
@@ -2222,6 +2967,50 @@ var Index = function Index() {
 
 module.exports = __webpack_require__(/*! /home/samith/Documents/react-ws/my-instagram/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "axios":
+/*!************************!*\
+  !*** external "axios" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
+
+/***/ }),
+
+/***/ "core-js/library/fn/array/from":
+/*!************************************************!*\
+  !*** external "core-js/library/fn/array/from" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/array/from");
+
+/***/ }),
+
+/***/ "core-js/library/fn/array/is-array":
+/*!****************************************************!*\
+  !*** external "core-js/library/fn/array/is-array" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/array/is-array");
+
+/***/ }),
+
+/***/ "core-js/library/fn/is-iterable":
+/*!*************************************************!*\
+  !*** external "core-js/library/fn/is-iterable" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/is-iterable");
 
 /***/ }),
 
@@ -2258,6 +3047,28 @@ module.exports = require("core-js/library/fn/object/define-property");
 
 /***/ }),
 
+/***/ "core-js/library/fn/object/get-own-property-descriptor":
+/*!************************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-descriptor" ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/get-own-property-symbols":
+/*!*********************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-symbols" ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-symbols");
+
+/***/ }),
+
 /***/ "core-js/library/fn/object/get-prototype-of":
 /*!*************************************************************!*\
   !*** external "core-js/library/fn/object/get-prototype-of" ***!
@@ -2269,6 +3080,17 @@ module.exports = require("core-js/library/fn/object/get-prototype-of");
 
 /***/ }),
 
+/***/ "core-js/library/fn/object/keys":
+/*!*************************************************!*\
+  !*** external "core-js/library/fn/object/keys" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/keys");
+
+/***/ }),
+
 /***/ "core-js/library/fn/object/set-prototype-of":
 /*!*************************************************************!*\
   !*** external "core-js/library/fn/object/set-prototype-of" ***!
@@ -2277,6 +3099,17 @@ module.exports = require("core-js/library/fn/object/get-prototype-of");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/set-prototype-of");
+
+/***/ }),
+
+/***/ "core-js/library/fn/promise":
+/*!*********************************************!*\
+  !*** external "core-js/library/fn/promise" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/promise");
 
 /***/ }),
 
@@ -2365,6 +3198,61 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-redux":
+/*!******************************!*\
+  !*** external "react-redux" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-redux");
+
+/***/ }),
+
+/***/ "redux":
+/*!************************!*\
+  !*** external "redux" ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("redux");
+
+/***/ }),
+
+/***/ "redux-devtools-extension":
+/*!*******************************************!*\
+  !*** external "redux-devtools-extension" ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("redux-devtools-extension");
+
+/***/ }),
+
+/***/ "redux-thunk":
+/*!******************************!*\
+  !*** external "redux-thunk" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("redux-thunk");
+
+/***/ }),
+
+/***/ "regenerator-runtime":
+/*!**************************************!*\
+  !*** external "regenerator-runtime" ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("regenerator-runtime");
 
 /***/ }),
 

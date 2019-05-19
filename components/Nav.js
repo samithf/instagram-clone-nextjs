@@ -1,3 +1,7 @@
+/**
+ * will contain nav section of the application
+ */
+
 import Link from 'next/link';
 
 const Nav = () => (

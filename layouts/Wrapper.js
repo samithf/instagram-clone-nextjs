@@ -1,13 +1,17 @@
+/**
+ * application wrapper. wrapper of the main component
+ */
+import { Provider } from 'react-redux';
+
 const Wrapper = props => (
   <div className="wrapper">
-    {props.children}
+    {props.children},
     <style jsx>{`
       .wrapper {
         width: 100%;
         max-width: 1000px;
         height: 100%;
         margin-bottom: 50px;
-        // background-color: green;
       }
       @media (min-width: 800px) {
         .wrapper {

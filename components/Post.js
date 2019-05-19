@@ -1,118 +1,104 @@
+/**
+ * Post component
+ * will hold specific post releted data
+ */
+
 import Link from 'next/link';
+import { connect } from 'react-redux';
+import { toggleLikePost, updatePostLikes } from '../store';
+import styles from './Post-Styles';
 
-const Post = ({ data }) => (
-  <article className="post">
-    <header>
-      <div className="post-user">
-        <div className="post-user-avatar">
-          <img src={data.profileImage} alt="image" />
+class Post extends React.Component {
+  render() {
+    const { post, loggedUser } = this.props;
+
+    return (
+      <article className="post">
+        <header>
+          <div className="post-user">
+            <div className="post-user-avatar">
+              <img src={post.user.avatarUrl} alt="image" />
+            </div>
+            <div className="post-user-nickname">
+              <span>{post.user.username}</span>
+            </div>
+          </div>
+        </header>
+        <div className="post-image">
+          <div className="post-image-bg">
+            <img className="responsive" alt="no" src={post.imageUrl} />
+          </div>
+          <div className="post-meta">
+            <div className="meta-info">
+              <span>{post.title}</span>
+              <span className="cur">AED {post.price}</span>
+            </div>
+            <div className="favourite">
+              <span
+                onClick={() => {
+                  this.updateUserLikes(loggedUser, post._id);
+                }}
+              >
+                <i
+                  className={`${
+                    this.isGuestLiked(post._id, loggedUser) ? 'fas' : 'far'
+                  } fa-heart`}
+                />
+              </span>
+            </div>
+          </div>
         </div>
-        <div className="post-user-nickname">
-          <span>{data.user}</span>
-        </div>
-      </div>
-    </header>
-    <div className="post-image">
-      <div className="post-image-bg">
-        <img className="responsive" alt="no" src={data.image} />
-      </div>
-      <div className="post-meta">
-        <div className="meta-info">
-          <span>Leaf iPhone case hard plastic</span>
-          <span className="cur">AED 230</span>
-        </div>
-        <div className="favourite">
-          <span>
+        <div className="post-caption">
+          <span className="post-likes">
             <i className="fas fa-heart" />
+            {post.numOfLikes} likes
           </span>
+          <p className="post-description">{post.description}</p>
+          <Link href="/">
+            <span className="post-comments">
+              View {post.numOfComments} comments
+            </span>
+          </Link>
         </div>
-      </div>
-    </div>
-    <div className="post-caption">
-      <span className="post-likes">
-        <i className="fas fa-heart" />
-        {data.likes} likes
-      </span>
-      <p className="post-description">{data.description}</p>
-      <Link href="/">
-        <span className="post-comments">View {data.comments} comments</span>
-      </Link>
-    </div>
+        <style jsx>{styles}</style>
+      </article>
+    );
+  }
 
-    <style jsx>{`
-      .post {
-        // padding: 1rem;
-        border-bottom: 1px solid #e0e0e0;
-      }
-      .post-user {
-        display: flex;
-        align-items: center;
-        align-content: center;
-        padding: 1rem;
-      }
-      .post-caption {
-        padding: 0.8rem 1rem;
-      }
-      .post-user-avatar > img {
-        border-radius: 50%;
-        height: 40px;
-      }
-      .post-user-nickname > span {
-        color: #7a33fb;
-        padding-left: 0.5rem;
-        font-weight: 500;
-      }
-      .responsive {
-        width: 100%;
-        height: auto;
-      }
-      .post-caption > .post-likes {
-        color: #7a33fb;
-        font-size: 1rem;
-        font-weight: 500;
-      }
-      .post-caption > .post-likes > i {
-        padding-right: 0.5rem;
-      }
-      .post-caption > .post-description {
-        font-size: 0.8rem;
-        padding: 0.5rem 0;
-      }
-      .post-caption > .post-comments {
-        font-size: 0.7rem;
-        color: #676767;
-        cursor: pointer;
-      }
-      .post-image {
-        position: relative;
-      }
-      .post-meta > .meta-info > span {
-        display: block;
-      }
-      .post-meta > .meta-info > span:nth-child(1) {
-        font-size: 0.9rem;
-      }
-      .post-meta > .meta-info > span:nth-child(2) {
-        font-weight: 500;
-        font-size: 1rem;
-      }
-      .post-meta > .favourite > span {
-        display: block;
-      }
-      .post-meta {
-        padding: 1rem;
-        width: 100%;
-        box-sizing: border-box;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-      }
-    `}</style>
-  </article>
-);
+  // when user clicks 'heart' symble on the post
+  // we will update 'logged user liked posts' and 'number of likes for this post'
+  async updateUserLikes(loggedUser, postId) {
+    const index = loggedUser.likes.indexOf(postId);
+    let likes = 0;
+    if (index === -1) {
+      alert('you liked it');
+      loggedUser.likes.push(postId);
+      likes = 1;
+    } else {
+      alert('you disliked it');
+      loggedUser.likes.splice(index, 1);
+      likes = -1;
+    }
+    await this.props.toggleLikePost(loggedUser._id, loggedUser);
+    this.updatePostLikes(postId, likes);
+  }
 
-export default Post;
+  updatePostLikes(postId, likes) {
+    const post = this.props.posts.find(post => post._id == postId);
+    post.numOfLikes += likes;
+    this.props.updatePostLikes(postId, post);
+  }
+
+  isGuestLiked(postId, loggedUser) {
+    return loggedUser && loggedUser.likes.indexOf(postId) >= 0;
+  }
+}
+
+const mapStateToProps = state => {
+  return { loggedUser: state.loggedUser, posts: state.posts };
+};
+
+export default connect(
+  mapStateToProps,
+  { toggleLikePost, updatePostLikes }
+)(Post);
