@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
  // central point to backend API
 
 /* harmony default export */ __webpack_exports__["default"] = (axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
-  baseURL: 'http://localhost:5000/api'
+  baseURL: 'https://samith-instagram-server.herokuapp.com/api/'
 }));
 
 /***/ }),

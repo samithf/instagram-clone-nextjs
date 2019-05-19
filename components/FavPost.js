@@ -18,7 +18,6 @@ class FavPost extends React.Component {
 
         <style jsx>{`
           .fav-box {
-            border: 1px solid red;
             display: flex;
           }
           .image-wrapper {

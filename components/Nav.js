@@ -9,11 +9,13 @@ const Nav = () => (
     <Link href="/">
       <span className="menu-icon">
         <i className="fas fa-home fa-lg" />
+        <span className="text-label">Home</span>
       </span>
     </Link>
     <Link href="/favorites">
       <span className="menu-icon">
         <i className="fas fa-heart fa-lg" />
+        <span className="text-label">Liked</span>
       </span>
     </Link>
 
@@ -31,6 +33,9 @@ const Nav = () => (
         left: 0;
         width: 100%;
       }
+      .text-label {
+        display: none;
+      }
       .nav > .menu-icon {
         display: block;
         cursor: pointer;
@@ -43,6 +48,12 @@ const Nav = () => (
           left: 50%;
           width: 1000px;
           transform: translate(-50%, 0);
+        }
+        .text-label {
+          display: block;
+        }
+        .fas {
+          display: none;
         }
       }
     `}</style>
